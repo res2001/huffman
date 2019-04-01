@@ -1,0 +1,21 @@
+//------------------------------------------------
+//--- 010 Editor v7.0.2 Binary Template
+//
+//      File: enc.bt
+//   Authors: res2001
+//   Version: 
+//   Purpose: View encoded files
+//  Category: 
+// File Mask: 
+//  ID Bytes: 
+//   History: 
+//------------------------------------------------
+LittleEndian();
+char magic[2];
+uint64 lendata;
+uint16 lendict;
+struct dict_s {
+    byte sym;
+    uint32 count;
+} dict[lendict];
+byte data[2];
